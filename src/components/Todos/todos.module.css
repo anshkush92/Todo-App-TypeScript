@@ -1,0 +1,53 @@
+.todos {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.todos-single {
+  display: flex;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRzFFcuNNkjugkaSjgAKClo9-dEu_Jh9NbW959EpK1A&s");
+}
+.todos-single-text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.todos-single-text:focus {
+  outline: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos-single {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .todos {
+    width: 95%;
+    gap: 10px;
+  }
+  .todos-single {
+    width: 90%;
+  }
+}
